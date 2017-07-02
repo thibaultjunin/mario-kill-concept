@@ -1,0 +1,116 @@
+.bg{
+    background:#006AB8 url( platform.png );
+    background-repeat: repeat-x;
+    width: 100%;
+    height:732px;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.arrow{
+    top: 520px;
+    left: 10px;
+    position: absolute;
+}
+
+.block{
+    top: 265px;
+    left: 150px;
+    position: absolute;
+}
+
+.block2{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+.nuage{
+    position: absolute;
+    left: 400px;
+    animation: cloud 3s infinite;
+    animation-direction: alternate;
+}
+
+.nuage2{
+    position: absolute;
+    left: 800px;
+    top: 100px;
+    animation: cloud 3s infinite;
+    animation-direction: alternate;
+}
+
+.waiting{
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000 url(pause.png) no-repeat center center;
+    opacity: 0.8;
+}
+
+.play{
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000 url(play.png) no-repeat center center;
+    opacity: 0.8;
+}
+
+.thwomp{
+    width: 190px;
+    position: absolute;
+    left: 600px;
+    top: 70px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    padding-left: 6px;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.thwomp_anim{ 
+    animation: down 6s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes down {
+  0% {
+    /*transform: translate(0, 0); */
+  }
+  50% {
+    /*transform: translate(0px, 320px);*/
+    top: 390px;
+  }
+  100% {
+    /*transform: translate(0, 0);*/
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(20px, 50px);
+  }
+}

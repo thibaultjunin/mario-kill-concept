@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="cssjeu.css"/>
+    <title> Jeu</title>
+    <script src="https://cdn.stail.eu/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="socket.io.js"></script>
+    <script type="text/javascript" src="WaveControler.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+    <div class="bg" id="game" data-playing="other">
+        <img  class="arrow" src="arrow.png"/>
+        <img class="block" src="block.png" />
+        <img class="block2" src="block2.png" />
+        <img class="nuage" src="nuage1.png" />
+        <img class="nuage2" src="nuage2.png" />
+        <img class="thwomp" id="thwomp" src="thwomp.png" />
+    </div>
+    <div class="overlay">
+        <p><span id="points">%points%</span><span style="float:right;padding-right:15px;" id="life">%life%</span></p>
+    </div>
+</body>
+</html>
