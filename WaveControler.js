@@ -72,7 +72,7 @@ class WaveControler{
                 el.parentNode.removeChild(el);
                 delete marios[i];
                 socket.emit('mario kill', {
-                    game: true,
+                    game: false,
                     id: i
                 });
             } 

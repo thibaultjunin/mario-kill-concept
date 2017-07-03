@@ -80,7 +80,10 @@ socket.on('points', function(data){
     updatePoints();
     if(life <= 0){
         socket.emit('game end');
-        alert("END"); 
+        started = false;
+        var div = document.createElement("div");
+        div.className = "end";
+        document.body.appendChild(div);
     }
     if(wave == 1){
         newWave();
@@ -98,8 +101,10 @@ socket.on('points', function(data){
 });
 
 socket.on('game end', function(data){
-    //data.points
-    alert("END");
+    started = false;
+    var div = document.createElement("div");
+    div.className = "end";
+    document.body.appendChild(div);
 });
 
 function thwomp_move(){

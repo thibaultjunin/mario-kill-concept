@@ -67,6 +67,17 @@ html,body{
     opacity: 0.8;
 }
 
+.end{
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000 url(close.png) no-repeat center center;
+    opacity: 0.8;
+}
+
 .thwomp{
     width: 190px;
     position: absolute;
